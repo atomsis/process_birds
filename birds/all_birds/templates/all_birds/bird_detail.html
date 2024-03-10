@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Карточка птицы</title>
+</head>
+<body>
+    <h1>{{ bird.name }}</h1>
+    <p>Цвет перьев: {{ bird.feather_color }}</p>
+    <img src="{{ bird.photo.url }}" alt="Фото птицы">
+    <a href="{% url 'create_sighting' bird.id %}">Я видел эту птицу!</a>
+</body>
+</html>
