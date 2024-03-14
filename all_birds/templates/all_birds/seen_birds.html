@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Seen Birds{% endblock %}
+
+{% block content %}
+    <h2>Seen Birds</h2>
+    <ul>
+        {% for bird in seen_birds %}
+            <li>{{ bird.name }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

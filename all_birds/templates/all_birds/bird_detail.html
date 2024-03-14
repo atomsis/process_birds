@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Bird Detail{% endblock %}
+
+{% block content %}
+    <h2>{{ bird.name }} Details</h2>
+    <p>Feather Color: {{ bird.feather_color }}</p>
+    {% if bird.image %}
+        <img src="{{ bird.image.url }}" alt="{{ bird.name }}">
+    {% endif %}
+{% endblock %}
